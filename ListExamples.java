@@ -3,7 +3,7 @@ import java.util.List;
 
 interface StringChecker { boolean checkString(String s); }
 
-class ListExamples {
+class ListExamples implements StringChecker {
 
   // Returns a new list that has all the elements of the input list for which
   // the StringChecker returns true, and not the elements that return false, in
@@ -43,6 +43,13 @@ class ListExamples {
       index1 += 1;
     }
     return result;
+  }
+
+
+  @Override
+  public boolean checkString(String s) {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'checkString'");
   }
 
 
